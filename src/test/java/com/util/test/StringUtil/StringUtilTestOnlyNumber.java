@@ -45,7 +45,7 @@ public class StringUtilTestOnlyNumber {
         //Act
         String result = onlyNumber(text);
 
-        //Result
+        //Assert
         assertNull(result);
     }
 
@@ -61,7 +61,7 @@ public class StringUtilTestOnlyNumber {
         String result2 = onlyNumber(text2);
         String result3 = onlyNumber(text3);
 
-        //Result
+        //Assert
         assertNull(result1);
         assertNull(result2);
         assertNull(result3);
@@ -79,7 +79,7 @@ public class StringUtilTestOnlyNumber {
         String result2 = onlyNumber(text2);
         String result3 = onlyNumber(text3);
 
-        //Result
+        //assert
         assertNotNull(result1);
         assertNotNull(result2);
         assertNotNull(result3);
@@ -101,7 +101,7 @@ public class StringUtilTestOnlyNumber {
         String result2 = onlyNumber(text2);
         String result3 = onlyNumber(text3);
 
-        //Result
+        //Assert
         assertNotNull(result1);
         assertNotNull(result2);
         assertNotNull(result3);
@@ -123,7 +123,7 @@ public class StringUtilTestOnlyNumber {
         String result2 = onlyNumber(text2);
         String result3 = onlyNumber(text3);
 
-        //Result
+        //Assert
         assertNotNull(result1);
         assertNotNull(result2);
         assertNotNull(result3);
