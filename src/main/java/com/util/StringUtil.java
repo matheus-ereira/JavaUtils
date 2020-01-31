@@ -5,8 +5,6 @@
  */
 package com.util;
 
-import com.google.common.base.Strings;
-
 /**
  *
  * @author Matheus
@@ -52,7 +50,8 @@ public class StringUtil {
      * returns a string without characters.
      */
     public static String onlyNumber(String text){
-        if(Strings.isNullOrEmpty(trim(text))) return null;
+        text = trim(text);
+        if(text.isEmpty()) return null;
         
         return text.replaceAll("[^0-9]", "");
     }
@@ -65,7 +64,8 @@ public class StringUtil {
      * returns a string without tags.
      */
     public static String removeTagsHtml(String text){
-        if(Strings.isNullOrEmpty(text)) return null;
+        text = trim(text);
+        if(text.isEmpty()) return null;
         
         return text.replaceAll("<[^>]*>", "");
     }
